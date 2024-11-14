@@ -1,6 +1,19 @@
 .primary-padding{
     padding: 0vh 13.5vh;
 }
+.btn{
+    color: #FFF;
+text-align: center;
+font-family: Mulish;
+font-size: 1rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.search{width: 1.5rem;
+    height: 1.5rem;
+    margin-right: .5rem;
+}
 /* nav bar related  style */
 .nav{
     display: flex;
@@ -56,6 +69,72 @@ line-height: normal;
     font-weight: 400;
     line-height: normal;
 }
+/* header banner */
+header{ 
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.80) 0%, rgba(19, 19, 24, 0.00) 100%), url('Images/Group\ 13\ \(1\)\ \(1\).png');
+    border-radius: 16px;
+}
+.header-content{
+    padding: 4.25vw 13vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: ;
+}
+.header-content .header-title{
+    color: #FFF;
+font-family: Mulish;
+font-size: 4rem;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+margin: 0;
+}
+.header-content .header-description{
+    color: #FFF;
+text-align: center;
+font-family: Mulish;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: 1.5rem; /* 162.5% */
+}
+.header-content .select{
+    border-radius: .5rem;
+background: rgba(255, 255, 255, 0.30);
+display: inline-flex;
+padding: 1rem;
+align-items: flex-start;
+gap: 1.5rem;
+}
+.header-content .select select{
+    border-radius: .5rem;
+background: #FFF;
+width: 10.8rem;
+height: 3.25rem;
+flex-shrink: 0;
+color: rgba(19, 19, 24, 0.50);
+font-family: Mulish;
+font-size: 1rem;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+padding-left: 1rem ;
+
+}
+.header-content .select .btn{
+    border-radius: .5rem;
+    background: #FF5400;
+    width: 10.8rem;
+    height: 3.25rem;
+    flex-shrink: 0;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /* resposive web layout */
 /* *********************************************************************************** */
@@ -70,6 +149,30 @@ line-height: normal;
     .manu-collaps{
         display:flex;
     }
+    /* header */
+    header{
+        background-position-x:50% ;
+    }
+    .header-content{
+        padding: 2rem 1rem;
+    }
+     .header-content .header-title{
+        font-size: 1.4rem;
+    }
+    .header-content .header-description{
+        font-size: .8rem;
+        margin: .4rem 0rem;
+    }
+    .header-content .select{
+        flex-direction: column;
+        width: 90%;
+    }
+    .header-content .select select{
+        width: 100%;
+    }
+    .header-content .select .btn{
+        width: 100%;
+    }
 }
 /* tablet web layout */
 @media screen and (min-width:577px) and (max-width:1024px) {
@@ -82,5 +185,24 @@ line-height: normal;
     }
     .manu-collaps{
         display:flex;
+    }
+    /* header */
+    .header-content .header-title{
+        font-size: 2rem;
+        margin: 0%;
+    }
+    .header-content .header-description{
+        font-size: 1rem;
+        margin: .4rem 0rem;
+    }
+    .header-content .select{
+        flex-direction: column;
+        width: 90%;
+    }
+    .header-content .select select{
+        width: 100%;
+    }
+    .header-content .select .btn{
+        width: 100%;
     }
 }
