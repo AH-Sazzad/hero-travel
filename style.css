@@ -1,0 +1,86 @@
+.primary-padding{
+    padding: 0vh 13.5vh;
+}
+/* nav bar related  style */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.nav .logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav .manu{
+    display: flex;
+    align-items: center;
+}
+.nav .manu-list{
+    display: flex;
+    width:100vh;
+    margin: 0;
+    padding: 10px 0px;
+    justify-content: space-between;
+    align-items: center;
+}
+.manu-collaps{
+    display:none;
+}
+.list-item{
+    list-style: none;
+}
+.logo h1{
+    color: #131318;
+font-family: Mulish;
+font-size: 36px;
+font-style: normal;
+font-weight: 800;
+line-height: normal;
+
+}
+.logo h1 span{
+    color: #FF5400;
+}
+.logo-icon{
+    width: 56px;
+    height: 48px;
+}
+.list-item a{
+    text-decoration: none;
+    color:  #424247;
+    text-align: center;
+    font-family: Mulish;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* resposive web layout */
+/* *********************************************************************************** */
+/* mobile web layout */
+@media screen and (max-width:576px) {
+    .primary-padding{
+        padding: 0vh 0vh;
+    }
+    .nav .manu-list{
+        display: none;
+    }
+    .manu-collaps{
+        display:flex;
+    }
+}
+/* tablet web layout */
+@media screen and (min-width:577px) and (max-width:1024px) {
+
+    .primary-padding{
+        padding: 0vh 0vh;
+    }
+    .nav .manu-list{
+        display: none;
+    }
+    .manu-collaps{
+        display:flex;
+    }
+}
